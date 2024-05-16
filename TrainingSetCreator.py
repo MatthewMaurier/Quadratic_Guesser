@@ -39,6 +39,7 @@ for i in range(0,1):
     ydf = pd.DataFrame([list(y)])
     b = a*-(x_int1+x_int2)
     c = a*x_int1*x_int2
+    
     if i == 0:
         xydf = pd.concat([xdf,ydf])
         abcdf = pd.DataFrame([[a, b, c]]) 
@@ -49,6 +50,6 @@ for i in range(0,1):
 
     
 
-xydf.to_csv('\\Users\\Matth\\OneDrive\\Desktop\\Summer\\Python\\Quadratic_Guesser\\.gitignore\\xy_data.csv', index = False, header = False)
-abcdf.to_csv('\\Users\\Matth\\OneDrive\\Desktop\\Summer\\Python\\Quadratic_Guesser\\.gitignore\\abc_data.csv', index = False, header = ['a', 'b', 'c'])
+xydf.to_csv('\\Users\\Matth\\OneDrive\\Desktop\\Summer\\Python\\Quadratic_Guesser\\xy_data.csv', index = False, header = False) #Paths Different for Everyone
+abcdf.to_csv('\\Users\\Matth\\OneDrive\\Desktop\\Summer\\Python\\Quadratic_Guesser\\abc_data.csv', index = False, header = ['a', 'b', 'c']) 
 print(f"{time.time()-t}s")

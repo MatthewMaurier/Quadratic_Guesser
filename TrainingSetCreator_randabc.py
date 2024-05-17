@@ -25,6 +25,7 @@ for i in range(0,100000):
     else:
         xydf = pd.concat([xydf,ydf])
         abcdf = pd.concat([abcdf, pd.DataFrame([list([a, b, c])])])
+    print(i)
 
     
 
